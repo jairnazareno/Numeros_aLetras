@@ -15,13 +15,14 @@ namespace Numeros_aLetras
         public FrmEmisionDeCheque()
         {
             InitializeComponent();
+            
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             UTILS.NumeroALetras.testUnidades();
             int num = Int32.Parse(this.txtCantidad.Text);
-            this.txtResultado.Text = UTILS.NumeroALetras.getCentenas(num);
+            this.txtResultado.Text = UTILS.NumeroALetras.getmillones(num);
         }
     }
 }

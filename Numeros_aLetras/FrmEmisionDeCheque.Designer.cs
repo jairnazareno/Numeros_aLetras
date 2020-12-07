@@ -28,91 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPagueseAlaOrdenDe = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnCalcular = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Paguese a la orden de :";
+            this.pictureBox1.Image = global::Numeros_aLetras.Properties.Resources.cheque1;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(902, 463);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // txtCliente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "La cantidad de :";
-            // 
-            // txtPagueseAlaOrdenDe
-            // 
-            this.txtPagueseAlaOrdenDe.Location = new System.Drawing.Point(180, 42);
-            this.txtPagueseAlaOrdenDe.Name = "txtPagueseAlaOrdenDe";
-            this.txtPagueseAlaOrdenDe.Size = new System.Drawing.Size(266, 20);
-            this.txtPagueseAlaOrdenDe.TabIndex = 2;
+            this.txtCliente.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Location = new System.Drawing.Point(168, 195);
+            this.txtCliente.Multiline = true;
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(704, 33);
+            this.txtCliente.TabIndex = 7;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(135, 81);
+            this.txtCantidad.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(654, 82);
+            this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidad.TabIndex = 3;
+            this.txtCantidad.Size = new System.Drawing.Size(207, 47);
+            this.txtCantidad.TabIndex = 8;
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(39, 162);
+            this.txtResultado.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtResultado.Location = new System.Drawing.Point(40, 327);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ReadOnly = true;
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResultado.Size = new System.Drawing.Size(462, 89);
-            this.txtResultado.TabIndex = 4;
+            this.txtResultado.Size = new System.Drawing.Size(729, 40);
+            this.txtResultado.TabIndex = 9;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(654, 416);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 10;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(265, 135);
+            this.btnCalcular.Location = new System.Drawing.Point(273, 401);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 5;
-            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.Size = new System.Drawing.Size(106, 35);
+            this.btnCalcular.TabIndex = 11;
+            this.btnCalcular.Text = " Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.btnCalcular.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmEmisionDeCheque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 286);
+            this.ClientSize = new System.Drawing.Size(899, 460);
             this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.txtPagueseAlaOrdenDe);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmEmisionDeCheque";
             this.Text = "Emision De Cheque";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPagueseAlaOrdenDe;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnCalcular;
     }
 }
