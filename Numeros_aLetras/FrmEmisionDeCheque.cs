@@ -20,6 +20,8 @@ namespace Numeros_aLetras
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             UTILS.NumeroALetras.testUnidades();
+            int num = Int32.Parse(this.txtCantidad.Text);
+            this.txtResultado.Text = UTILS.NumeroALetras.getCentenas(num);
         }
     }
 }
