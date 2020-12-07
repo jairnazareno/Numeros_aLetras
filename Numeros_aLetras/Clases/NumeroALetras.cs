@@ -26,7 +26,7 @@ namespace UTILS
             }
         }
         /// <summary>
-        /// Devielve el equivalente en letras y unidades
+        /// Devielve el equivalente en letras y Unidades
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
