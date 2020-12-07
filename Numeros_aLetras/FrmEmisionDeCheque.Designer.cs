@@ -50,7 +50,7 @@
             // txtCliente
             // 
             this.txtCliente.BackColor = System.Drawing.Color.PowderBlue;
-            this.txtCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCliente.Location = new System.Drawing.Point(168, 195);
             this.txtCliente.Multiline = true;
             this.txtCliente.Name = "txtCliente";
@@ -60,7 +60,7 @@
             // txtCantidad
             // 
             this.txtCantidad.BackColor = System.Drawing.Color.PowderBlue;
-            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(654, 82);
             this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
@@ -70,12 +70,13 @@
             // txtResultado
             // 
             this.txtResultado.BackColor = System.Drawing.Color.PowderBlue;
-            this.txtResultado.Location = new System.Drawing.Point(40, 327);
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(40, 297);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ReadOnly = true;
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResultado.Size = new System.Drawing.Size(729, 40);
+            this.txtResultado.Size = new System.Drawing.Size(729, 70);
             this.txtResultado.TabIndex = 9;
             // 
             // dateTimePicker1
